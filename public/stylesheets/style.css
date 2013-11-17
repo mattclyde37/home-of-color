@@ -1,8 +1,43 @@
 body {
-  padding: 50px;
+	margin: 0px;
+	padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#dadada;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+	margin:0 auto; 
+	color:#696969;
+	font-size: largest;
+}
+
+#picker-div{
+	width:195px; 
+	margin:0 auto;
+}
+
+#main-form{
+	width: 400px; 
+	margin:0 auto;
+	margin-top: 30px;
+}
+
+.default-button{
+	color: white;
+	background-color: #618fb3;
+	font-size: large;
+	padding: 10px 20px;
+	margin: 10px 15px;
+	border-radius: 12px;
+	border: 0px;
+}
+
+.default-button:hover{
+}
+
+.default-button:active{
 }
