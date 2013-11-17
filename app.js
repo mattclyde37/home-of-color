@@ -36,9 +36,11 @@ app.post("/ChangeColor", function (req, res){
 	res.send("ok");
 });
 
+
 app.post("/SetIp/:token", function (req, res){
 	if (req.params.token == "myToken")
 	{
 
 	}
 });
+
