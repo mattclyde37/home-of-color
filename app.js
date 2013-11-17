@@ -33,6 +33,7 @@ http.createServer(app).listen(app.get('port'), function(){
 
 app.post("/ChangeColor", function (req, res){
 	console.log(req.body);
+	// send to known ip address
 	res.send("ok");
 });
 
@@ -40,7 +41,7 @@ app.post("/ChangeColor", function (req, res){
 app.post("/SetIp/:token", function (req, res){
 	if (req.params.token == "myToken")
 	{
-
+		// set known ip address...
 	}
 });
 
