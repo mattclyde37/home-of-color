@@ -1,11 +1,11 @@
 {
-  "name": "change-my-lights",
+  "name": "change-me-lights",
   "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
-    "express": "3.4.4"
+    "express": "3.1.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
   }
 }
