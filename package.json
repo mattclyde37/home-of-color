@@ -1,5 +1,5 @@
 {
-  "name": "change-me-lights",
+  "name": "change-my-lights",
   "version": "0.0.1",
   "dependencies": {
     "express": "3.1.x"
