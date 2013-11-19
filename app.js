@@ -8,6 +8,8 @@ var http = require('http');
 var path = require('path');
 
 var app = express();
+var token = "itstestingtime";
+var homeServerInstance = "";
 
 // all environments
 app.set('port', process.env.PORT || 80);
@@ -39,8 +41,9 @@ app.post("/ChangeColor", function (req, res){
 
 
 app.post("/SetIp/:token", function (req, res){
-	if (req.params.token == "myToken")
+	if (req.params.token == token)
 	{
-		// set known ip address...
+        homeServerInstance = req.params.data;
+        res.send("Ip set to: " + homeServerInstance);
 	}
 });
