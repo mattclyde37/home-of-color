@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 
 function OnButtonClick(){
+    /*
 	$.ajax({
 		url: "localhost:3000/ChangeColor",
 		type: "POST",
@@ -16,4 +17,6 @@ function OnButtonClick(){
 			alert("Error");
 		}
 	});
+    */
+    alert("Hooray for Christmas!");
 }
