@@ -5,9 +5,8 @@ $(document).ready(function(){
 
 
 function OnButtonClick(){
-    /*
 	$.ajax({
-		url: "localhost:3000/ChangeColor",
+		url: "http://change-my-lights.herokuapp.com/ChangeColor",
 		type: "POST",
 		data: '{"Data": "Test"}',
 		success: function(data){
@@ -17,6 +16,5 @@ function OnButtonClick(){
 			alert("Error");
 		}
 	});
-    */
-    alert("Hooray for Christmas!");
+    //alert("Hooray for Christmas!");
 }
