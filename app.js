@@ -6,6 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
+var request = require('request');
 
 var app = express();
 var token = "itstestingtime";
@@ -35,7 +36,7 @@ http.createServer(app).listen(app.get('port'), function(){
 
 app.post("/ChangeColor", function (req, res){
 	console.log(req.body);
-	// send to known ip address
+	request.post(homeServerInstance + ":8080", req.body);
 	res.send("ok");
 });
 
