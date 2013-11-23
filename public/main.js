@@ -6,7 +6,7 @@ var socket = io.connect();
 
 
 function OnButtonClick(){
-	var selectedColor = $('#color').val();
+	var selectedColor = $('#color').css('backgroundColor');
 
 	socket.emit('change-color', { color: selectedColor});
 	/*
