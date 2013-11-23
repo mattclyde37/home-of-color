@@ -9,3 +9,7 @@ socket.on('connect', function () {
 socket.on('disconnect', function () {
   console.log("Disconnected from main server");
 });
+
+socket.on('change-color', function(data){
+	console.log("Change color to: " + data.color);
+});
