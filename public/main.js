@@ -6,7 +6,9 @@ var socket = io.connect();
 
 
 function OnButtonClick(){
-	socket.emit('change-color', { color: '#000000'});
+	var selectedColor = $('#color').val();
+
+	socket.emit('change-color', { color: selectedColor});
 	/*
 	$.ajax({
 		url: "http://change-my-lights.herokuapp.com/ChangeColor",
