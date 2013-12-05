@@ -55,6 +55,11 @@ button::-moz-focus-inner {
     border: 0;
     outline:none;
 }
+
+#color{
+    background-color: #555;
+}
+
 #title {
     width:100%; 
     text-align:center;
