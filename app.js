@@ -37,7 +37,6 @@ io.sockets.on('connection', function(socket){
 	
 	socket.on('change-color', function(data){
 		console.log("change color request to: " + data.color);
-
 		socket.broadcast.emit('change-color', data);
 	});
 

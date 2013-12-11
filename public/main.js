@@ -1,11 +1,11 @@
 
 
-$('#color').click(OnButtonClick);
-$('#button').hover(OnButtonHover);
+$('#button').click(OnButtonClick);
 
 var socket = io.connect();
 
 function OnButtonClick(){
+    debugger;
 	var selectedColor = $('#color').css('backgroundColor');
 	socket.emit('change-color', { color: selectedColor});
 }
