@@ -2,8 +2,8 @@
 var io = require('socket.io-client');
 var fs = require('fs');
 
-//var url = 'http://change-my-lights.herokuapp.com';
-var url = 'http://localhost:5000';
+var url = 'http://change-my-lights.herokuapp.com';
+//var url = 'http://localhost:5000';
 
 var socket = io.connect(url);
 socket.on('connect', function () {
